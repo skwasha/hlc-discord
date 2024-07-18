@@ -53,7 +53,7 @@ const sendDms = async (embed) => {
 
 const startCrons = () => {
 	// const testJob = new CronJob(
-	// 	"0 28 17 * * *", // Every 5 minutes
+	// 	"0 0 14 * * *", // Every 5 minutes
 	// 	async function () {
 	// 		console.log("Send out Day 1 preparation message");
 	// 		const embed = new EmbedBuilder()
@@ -67,7 +67,10 @@ const startCrons = () => {
 	// 				iconURL: "https://i.imgur.com/hBDHIyv.jpg",
 	// 			})
 	// 			.setTimestamp();
-	// 		await sendDms(embed).catch((e) => console.error(e));
+	// 		// await sendDms(embed).catch((e) => console.error(e));
+	// 		await bot.client.channels.cache
+	// 			.get("1232113774048055327")
+	// 			.send({ embeds: [embed] });
 	// 	}, // onTick
 	// 	null, // onComplete
 	// 	true, // start
